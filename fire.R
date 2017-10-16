@@ -31,7 +31,7 @@ m <- sv_spdf %>%  leaflet()%>%
   addProviderTiles(providers$Esri.WorldGrayCanvas) %>%
   addCircles(color = ~ mypal(BRIGHT_TI4), 
              fillColor = ~ mypal(BRIGHT_TI4),
-             popup =  ~ mypal(BRIGHT_TI4)) %>%
+             popup =  ~ BRIGHT_TI4) %>%
   addLegend("bottomleft", 
             pal = mypal, 
             values = ~ BRIGHT_TI4) 
